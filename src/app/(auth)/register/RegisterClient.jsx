@@ -1,19 +1,19 @@
 "use client";
 
-import Loader from "@/components/loader/Loader";
+import Loader from "src/components/loader/Loader";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import styles from "../login/Auth.module.scss";
 import Image from "next/image";
-import Input from "@/components/Input/Input";
-import Button from "@/components/button/Button";
-import Divider from "@/components/divider/Divider";
+import Input from "src/components/Input/Input";
+import Button from "src/components/button/Button";
+import Divider from "src/components/divider/Divider";
 import Link from "next/link";
 
-import LogoPath from "@/assets/colorful.svg";
+import LogoPath from "src/assets/colorful.svg";
 import { toast } from "react-toastify";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from "@/firebase/firebase";
+import { auth } from "src/firebase/firebase";
 
 const RegisterClient = () => {
   const [email, setEmail] = useState("");

@@ -1,8 +1,8 @@
-import ToastProvider from "@/components/toastProvider/ToastProvider";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Footer from "@/layouts/footer/Footer";
-import Header from "@/layouts/header/Header";
+import ToastProvider from "src/components/toastProvider/ToastProvider";
+import Footer from "src/layouts/footer/Footer";
+import Header from "src/layouts/header/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 

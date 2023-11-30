@@ -4,16 +4,10 @@ import React, { useEffect, useState } from "react";
 import styles from "./Header.module.scss";
 import Link from "next/link";
 import { onAuthStateChanged, signOut } from "firebase/auth";
-import { auth } from "@/firebase/firebase";
+import { auth } from "src/firebase/firebase";
 import { toast } from "react-toastify";
 import { usePathname, useRouter } from "next/navigation";
 import InnerHeader from "../innerHeader/InnerHeader";
-import { useDispatch, useSelector } from "react-redux";
-import {
-  REMOVE_ACTIVE_USER,
-  SET_ACTIVE_USER,
-  selectIsLoggedIn,
-} from "@/redux/slice/authSlice";
 
 const Header = () => {
   const pathname = usePathname();
