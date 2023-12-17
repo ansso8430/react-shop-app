@@ -8,7 +8,6 @@ import { useRouter } from "next/navigation";
 import styles from "./Auth.module.scss";
 import Loader from "src/components/loader/Loader";
 import Input from "src/components/Input/Input";
-import AutoSignInCheckbox from "src/components/autoSignInCheckbox/AutoSignInCheckbox";
 import Divider from "src/components/divider/Divider";
 import Button from "src/components/button/Button";
 import Link from "next/link";
@@ -96,11 +95,6 @@ const LoginClient = () => {
             />
 
             <div className={styles.group}>
-              <AutoSignInCheckbox
-                checked={isAutoLogin}
-                onChange={(e) => setIsAutoLogin(e.target.checked)}
-              />
-
               <Link href={"/reset"} className={styles.findLink}>
                 비밀번호 수정하기
                 <svg
