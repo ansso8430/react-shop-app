@@ -4,7 +4,8 @@ import React, { useEffect } from "react";
 import useFetchCollection from "src/hooks/useFetchCollection";
 import styles from "./Product.module.scss";
 import { useDispatch, useSelector } from "react-redux";
-import { STORE_PRODUCTS, selectProducts } from "../../redux/slice/productSlice";
+// prettier-ignore
+import { STORE_PRODUCTS, selectProducts, GET_PRICE_RANGE } from "src/redux/slice/productSlice";
 import Loader from "../loader/Loader";
 import ProductList from "./productList/ProductList";
 import ProductFilter from "./productFilter/ProductFilter";
