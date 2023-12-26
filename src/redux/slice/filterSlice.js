@@ -50,13 +50,14 @@ const filterSlice = createSlice({
           (product) => product.category === category
         );
       }
+
       if (brand === "All") {
         tempProducts = tempProducts;
       } else {
         tempProducts = products.filter((product) => product.brand === brand);
       }
 
-      tempProducts = products.filter((product) => product.price <= price);
+      tempProducts = products.filter((product) => product.price >= price);
 
       state.filteredProducts = tempProducts;
     },
